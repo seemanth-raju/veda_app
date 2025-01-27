@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "veda-3f3bb",
+    "staging": "veda-3f3bb"
+  },
+  "targets": {},
+  "etags": {}
+}

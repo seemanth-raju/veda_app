@@ -1,0 +1,60 @@
+[debug] [2025-01-22T12:16:56.886Z] ----------------------------------------------------------------------
+[debug] [2025-01-22T12:16:56.888Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2025-01-22T12:16:56.888Z] CLI Version:   13.29.1
+[debug] [2025-01-22T12:16:56.888Z] Platform:      darwin
+[debug] [2025-01-22T12:16:56.888Z] Node Version:  v20.9.0
+[debug] [2025-01-22T12:16:56.888Z] Time:          Wed Jan 22 2025 17:46:56 GMT+0530 (India Standard Time)
+[debug] [2025-01-22T12:16:56.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-22T12:16:56.922Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-22T12:16:56.922Z] > authorizing via signed-in user (seemanth.kurapati@gmail.com)
+[debug] [2025-01-22T12:16:56.922Z] [iam] checking project veda-3f3bb for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2025-01-22T12:16:56.922Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:56.922Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:56.923Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/veda-3f3bb:testIamPermissions [none]
+[debug] [2025-01-22T12:16:56.923Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/veda-3f3bb:testIamPermissions x-goog-quota-user=projects/veda-3f3bb
+[debug] [2025-01-22T12:16:56.923Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/veda-3f3bb:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2025-01-22T12:16:58.229Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/veda-3f3bb:testIamPermissions 200
+[debug] [2025-01-22T12:16:58.230Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/veda-3f3bb:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2025-01-22T12:16:58.230Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:58.230Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:58.231Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/veda-3f3bb [none]
+[debug] [2025-01-22T12:16:58.624Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/veda-3f3bb 200
+[debug] [2025-01-22T12:16:58.624Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/veda-3f3bb {"projectId":"veda-3f3bb","projectNumber":"391464412154","displayName":"VEDA","name":"projects/veda-3f3bb","resources":{"hostingSite":"veda-3f3bb","realtimeDatabaseInstance":"veda-3f3bb-default-rtdb"},"state":"ACTIVE","etag":"1_37d8fa4a-d973-42fd-bb9e-d94c7fbfb23d"}
+[debug] [2025-01-22T12:16:58.625Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:58.625Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:58.625Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/veda-3f3bb [none]
+[debug] [2025-01-22T12:16:59.023Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/veda-3f3bb 200
+[debug] [2025-01-22T12:16:59.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/veda-3f3bb {"projectId":"veda-3f3bb","projectNumber":"391464412154","displayName":"VEDA","name":"projects/veda-3f3bb","resources":{"hostingSite":"veda-3f3bb","realtimeDatabaseInstance":"veda-3f3bb-default-rtdb"},"state":"ACTIVE","etag":"1_37d8fa4a-d973-42fd-bb9e-d94c7fbfb23d"}
+[debug] [2025-01-22T12:16:59.026Z] Specified "public" directory "dist" does not exist; Deploy to Hosting site "veda-3f3bb" may fail or be empty.
+[info] 
+[info] === Deploying to 'veda-3f3bb'...
+[info] 
+[info] i  deploying database, storage, firestore, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2025-01-22T12:16:59.030Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:59.030Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:16:59.030Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/veda-3f3bb/locations/-/instances/veda-3f3bb-default-rtdb [none]
+[debug] [2025-01-22T12:17:00.667Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/veda-3f3bb/locations/-/instances/veda-3f3bb-default-rtdb 200
+[debug] [2025-01-22T12:17:00.667Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/veda-3f3bb/locations/-/instances/veda-3f3bb-default-rtdb {"name":"projects/391464412154/locations/us-central1/instances/veda-3f3bb-default-rtdb","project":"projects/391464412154","databaseUrl":"https://veda-3f3bb-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2025-01-22T12:17:00.669Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:17:00.669Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:17:00.669Z] >>> [apiv2][query] PUT https://veda-3f3bb-default-rtdb.firebaseio.com/.settings/rules.json dryRun=true
+[debug] [2025-01-22T12:17:00.670Z] >>> [apiv2][body] PUT https://veda-3f3bb-default-rtdb.firebaseio.com/.settings/rules.json "{\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2025-01-22T12:17:01.272Z] <<< [apiv2][status] PUT https://veda-3f3bb-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2025-01-22T12:17:01.272Z] <<< [apiv2][body] PUT https://veda-3f3bb-default-rtdb.firebaseio.com/.settings/rules.json {"status":"ok"}
+[info] ✔  database: rules syntax for database veda-3f3bb-default-rtdb is valid 
+[info] i  storage: ensuring required API firebasestorage.googleapis.com is enabled... 
+[debug] [2025-01-22T12:17:01.273Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:17:01.273Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:17:01.273Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com [none]
+[debug] [2025-01-22T12:17:01.273Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com x-goog-quota-user=projects/veda-3f3bb
+[debug] [2025-01-22T12:17:02.905Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com 200
+[debug] [2025-01-22T12:17:02.905Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com [omitted]
+[warn] ⚠  storage: missing required API firebasestorage.googleapis.com. Enabling now... 
+[debug] [2025-01-22T12:17:02.906Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:17:02.906Z] Checked if tokens are valid: true, expires at: 1737551325521
+[debug] [2025-01-22T12:17:02.906Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com:enable [none]
+[debug] [2025-01-22T12:17:02.907Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com:enable x-goog-quota-user=projects/veda-3f3bb
+[debug] [2025-01-22T12:17:03.394Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com:enable 200
+[debug] [2025-01-22T12:17:03.395Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/veda-3f3bb/services/firebasestorage.googleapis.com:enable [omitted]
