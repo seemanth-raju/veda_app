@@ -166,7 +166,7 @@ const App = () => {
         <p className="text-lg mb-8" style={{ fontFamily: "Times New Roman" }}>
           Get ready for a game-changer.
         </p>
-        <div className="h-1 bg-blue-600 w-20 mx-auto animate-pulse"></div>
+        <div className="h-1 bg-[#fff] w-20 mx-auto animate-pulse"></div>
       </section>
 
       {/* Join Waitlist Section */}
