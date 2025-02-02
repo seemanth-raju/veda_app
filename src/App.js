@@ -59,7 +59,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white font-sans overflow-x-hidden">
       {/* VEDA Heading */}
       <header className="absolute top-0 left-1/2 transform -translate-x-1/2 py-4 z-10">
         <h2 className="text-2xl md:text-3xl font-semibold text-white" style={{ fontFamily: "Times New Roman" }}>
@@ -129,6 +129,7 @@ const App = () => {
                 className="rounded-lg shadow-lg transform transition-all"
                 style={{
                   width: "100%",
+                  maxWidth: "100%", // Ensure the image doesn't exceed the viewport width
                   height: "auto",
                   objectFit: "contain",
                 }}
