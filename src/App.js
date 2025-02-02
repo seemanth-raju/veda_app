@@ -24,18 +24,38 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.init('G99At-b5fAaqyxd9Q');
-    emailjs.send('service_your_service_id', 'template_5t2lu0n', {
+  
+    // Replace these with your actual EmailJS user ID, service ID, and template ID
+    const USER_ID = 'G99At-b5fAaqyxd9Q'; // Found in EmailJS Account > Integration
+    const SERVICE_ID = 'service_vtmf208'; // Found in EmailJS Email Services
+    const TEMPLATE_ID = 'template_5t2lu0n'; // Your template ID
+  
+    // Dynamic data for the template
+    const templateParams = {
+      to_name: 'User',
+      from_name: 'VEDA',
+      message: 'Congratulations, your pre-booking is confirmed. We will get in touch.',
       to_email: email,
-    })
-    .then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
-      toast.success("You have successfully signed up!");
-      setEmail("");
-    }, (err) => {
-      console.log('FAILED...', err);
-      toast.error("Failed to sign up. Please try again.");
-    });
+      reply_to: email,
+      from_email: 'seemanth.kurapati@gmail.com',
+      email: email,
+      user_email: email
+    };
+  
+    // Send the email
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          toast.success("You have successfully signed up!");
+          setEmail("");
+        },
+        (err) => {
+          console.log('FAILED...', err);
+          toast.error("Failed to sign up. Please try again.");
+        }
+      );
   };
 
   return (
